@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Students</title>
+  </head>
+  <body>
+    <h1>Add a Student</h1>
+    <form id="student_form" action="/studentnew1/add_student/" method="post">
+      {% csrf_token %}
+      {% for field in formfields.visible_fields %}
+      <p>
+        {{ field.help_text }}
+        {{ field }}
+      </p>
+      {% endfor %}
+      <input type="submit" name="submit" value="Create">
+    </form>
+  </body>
+</html>

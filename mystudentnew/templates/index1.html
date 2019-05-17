@@ -1,0 +1,51 @@
+<!--<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Web Application Application</title>
+    </head>
+
+    <body>
+        <h1>Mark Details</h1>
+        {% if students %}
+          <p>Students were found. They are:</p>
+          <table>
+            <tr>
+              <td>Reg No</td>
+              <td>Subject_title</td>
+              <td>Marks</td>
+              <td>Status</td>
+            </tr>
+            {% for student1 in ut1 %}
+
+              <tr>
+                <td>{{ student1.Register_number }}</td>
+                <td>{{ student1.Subject_title }}</td>
+                <td>{{ student1.cat1_mark }}</td>
+                <td>{{ student1.Status }}</td>
+              </tr>
+            {% endfor %}
+            {% for student2 in ut2 %}
+
+              <tr>
+                <td>{{ student2.Register_number }}</td>
+                <td>{{ student2.Subject_title }}</td>
+                <td>{{ student2.cat2_mark }}</td>
+                <td>{{ student2.Status }}</td>
+              </tr>
+            {% endfor %}
+            {% for student3 in ut3 %}
+
+              <tr>
+                <td>{{ student3.Register_number }}</td>
+                <td>{{ student3.Subject_title }}</td>
+                <td>{{ student3.cat3_mark }}</td>
+                <td>{{ student3.Status }}</td>
+              </tr>
+            {% endfor %}
+          </table>
+        {% else %}
+          <p>No students were found!</p>
+        {% endif %}
+    </body>
+</html>-->
